@@ -1,66 +1,104 @@
-# demo3
 <html lang="en">
     <head>
-        <title>Feedback Form</title>
-        <style>
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: gray;
-                margin: 0;
-                height: 100vh;
-                justify-content: center;
-                flex-wrap: wrap;
-                align-items: center;
-                display: flex;
-            }
-            .Feedback-box{
-                background-color: lightgray;
-                padding: 20px;
-                box-shadow: 0 0 10px rgba(0,0,0,1.0);
-                width: 300px;
-                border-radius: 8px;
-            }
-            h2{
-                text-align: center;
-                color:#333;
-                margin-top: 0;
-            }
-            input , textarea{
-                margin: 8px 0;
-                padding: 8px;
-                width: 100%;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-            }
-            button{
-                width: 100%;
-                padding: 10px;
-                background: green;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-            button :hover{
-                background-color: green;
-                padding: 8px;
-                
-            }
-        </style>
-        <body>
-            <div class="Feedback-box">
-                <h2>Feedback</h2>
-                <input type="text" placeholder="Your Name">
-                <input type="Email" placeholder="Your Email">
-                <input type="Experience" placeholder="Your Experience">
-                <textarea rows="4" placeholder="Your feedback"></textarea>
-                <button onclick="Myfun()">Submit Feedback</button>
-                <script>
-                    function Myfun(){
-                        alert("Submitted Feedback Successfully");
-                    }
-                </script>
-            </div>
-        </body>
+    <meta charset="UTF-8">
+    <title>Shop Smart-Online Store</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #4a5e34;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(32, 4, 48);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .banner {
+            background-color: #1d97b6;
+            text-align: center;
+            padding: 20px 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 15px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: left;
+            padding: 1rem;
+			position:relative;
+			bottom:0;
+			width:100%;
+            margin-top: 40px;
+        }
+        
+    </style>
     </head>
+    <body>
+    <header>
+        <h1>Shop Smart</h1>
+        <p>Online shopping destination</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Contack us</a>
+        <a href="#">Shop</a>
+    </nav>
+    <div class="banner">
+        <h2>Welcome to shop smart</h2>
+        <p>Discover the best product</p>
+    </div>
+    <section class="products">
+        <div class="product">
+            <img src="D:\Roshani\wat.jpg",alt="product1">
+            <h3>Smart watch</h3>
+            <p>Rs 999</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="D:\Roshani\watch1.jpg",alt="product2">
+            <h3>Smart watch</h3>
+            <p>Rs 999</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="D:\Roshani\watch.jpg",alt="product3">
+            <h3>Smart watch</h3>
+            <p>Rs 999</p>
+            <button>Add to cart</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy;2025 ShopSmart.All rights reserved</p>
+    </footer>
+</body>
 </html>
