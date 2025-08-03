@@ -1,5 +1,4 @@
 # demo3
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Feedback Form</title>
