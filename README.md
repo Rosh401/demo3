@@ -8,7 +8,7 @@
                 margin: 0;
                 height: 100vh;
                 justify-content: center;
-                flex-wrap: wrap;
+                flex-wrap: wrap; 
                 align-items: center;
                 display: flex;
             }
